@@ -1,7 +1,7 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 17/08/2020
 Var
@@ -19,11 +19,11 @@ vet: vetor [0..14] de inteiro
 Inicio
 
 para contador de 0 ate 14 faca
-  escreva ("Digite o nome do país: ")
+  escreva ("Digite o nome do paÃ­s: ")
   leia(paises[contador])
-  escreva ("Digite o número de casos: ")
+  escreva ("Digite o nÃºmero de casos: ")
   leia(casos[contador])
-  escreva("Digite o número de mortes: ")
+  escreva("Digite o nÃºmero de mortes: ")
   leia(mortes[contador])
 fimpara
 
@@ -34,28 +34,28 @@ para contador de 0 ate 14 faca
    escreval (paises[contador], " - Casos: ", casos[contador], " - Mortes", mortes[contador])
 fimpara
 
-escreval ("o total de casos é: ",totaldecasos)
-escreval ("o total de mortes é: ",totaldemortes)
-escreval ("mediana de mortes é: ",mortes[8])
-escreval ("mediana de casos é: ",casos[8])
+escreval ("o total de casos Ã©: ",totaldecasos)
+escreval ("o total de mortes Ã©: ",totaldemortes)
+escreval ("mediana de mortes Ã©: ",mortes[8])
+escreval ("mediana de casos Ã©: ",casos[8])
 
 para contador de 0 ate 14 faca
-escreva ("Nome do país: ")
+escreva ("Nome do paÃ­s: ")
 leia(paises[contador])
-escreva ("Número de mortes: ")
+escreva ("NÃºmero de mortes: ")
 leia(mortes[contador])
-escreva ("Número de casos: ")
+escreva ("NÃºmero de casos: ")
 leia(casos[contador])
 divisao[contador] <- mortes[contador]/casos[contador]
 porcentagem[contador] <- divisao[contador]*100
 fimpara
 
 para contador de 0 ate 14 faca
-escreval ("País: ",paises[contador]," - Mortes: ", mortes[contador]," - Casos: ", casos[contador])
+escreval ("PaÃ­s: ",paises[contador]," - Mortes: ", mortes[contador]," - Casos: ", casos[contador])
 escreval ("Porcentagem de mortes/casos: ", porcentagem[contador],"%")
 fimpara
 
-escreval ("Digite um país para pesquisar no vetor:")
+escreval ("Digite um paÃ­s para pesquisar no vetor:")
  leia(num)
  posicao <- 1
 
@@ -64,9 +64,9 @@ enquanto (posicao < 14) e (vet[posicao] <> num) faca
 fimenquanto
 
 se vet[posicao] = num entao
-    escreva ("País encontrado na posição: ", posicao, " - Casos: ",casos[contador]," - Mortes: ", mortes[contador])
+    escreva ("PaÃ­s encontrado na posiÃ§Ã£o: ", posicao, " - Casos: ",casos[contador]," - Mortes: ", mortes[contador])
 senao
-    escreva ("País não encontrado no array")
+    escreva ("PaÃ­s nÃ£o encontrado no array")
 fimse
 
 Fimalgoritmo
